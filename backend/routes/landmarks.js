@@ -9,7 +9,8 @@ router.get("/", function(req,res){
      console.log('payload from landmark db:', payload);
      helper.readFiles(payload).then(function(fileContents) {
        console.log('fileContents:', fileContents);
-       res.json(fileContents);
+       
+      //  res.json(fileContents);
     });
   });
 });

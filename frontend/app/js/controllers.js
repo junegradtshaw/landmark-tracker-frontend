@@ -2,6 +2,14 @@ app.controller("MainController", function($scope, $http, CatService){
    // no instance variables here....
 });
 
+app.controller("MainIndexController", function($scope, LandmarkService){
+  LandmarkService.getLandmarks().then(function(payload){
+    $scope.landmarks = payload.data;
+    console.log($scope.landmarks);
+  }, function(error){
+  });
+});
+
 app.controller("CatsIndexController", function($scope, CatService){
   CatService.getCats().then(function(payload){
     $scope.cat_collection = payload.data;

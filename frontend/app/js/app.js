@@ -7,9 +7,9 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/home.html',
         controller: 'MainController'
       })
-      .when('/cats', {
-        templateUrl: 'partials/cats/index.html',
-        controller: 'CatsIndexController'
+      .when('/landmarks', {
+        templateUrl: 'partials/landmarks/index.html',
+        controller: 'LandmarksIndexController'
       })
       .when('/cats/new', {
         templateUrl: 'partials/cats/new.html',

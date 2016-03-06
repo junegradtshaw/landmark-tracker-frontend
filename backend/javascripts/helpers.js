@@ -29,7 +29,16 @@ var helper = {
     console.log('fileNames: ', fileNames);
     return Q.all(fileNames.map(function(fileName) {
       console.log('fileName: ', fileName);
-        return Q.nfcall(fs.readFile, fileName.image_link, 'utf8');
+      // fs.readFile(fileName.image_link, function(err, data) {
+        // if (err) {
+          // console.log('error: ', err);
+          // throw err; // Fail if the file can't be read.
+        // }
+        // else {
+          // console.log('successful read data: ', data);
+          return Q.nfcall(fs.readFile, fileName.image_link, 'utf8');
+        // }
+      // })
     }));
   }
 }

@@ -2,14 +2,10 @@ var express = require('express');
 var router = express.Router();
 var knex = require("../db/knex");
 var helper = require("../javascripts/helpers");
-
-var Landmark = function(){
-  return knex('landmarks');
-}
-
+var db = require("../javascripts/db.js")
 
 router.get("/", function(req,res){
-   Landmark().select().then(function(payload){
+   db.Landmarks().select().then(function(payload){
      console.log('payload from landmark db:', payload);
      helper.readFiles(payload).then(function(fileContents) {
        console.log('fileContents:', fileContents);

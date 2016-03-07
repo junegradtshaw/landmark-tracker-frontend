@@ -5,8 +5,7 @@ exports.seed = function(knex, Promise) {
     knex('landmarks').del(),
 
     // Inserts seed entries
-    knex('landmarks').insert({id: 1, image_link: 'https://pixabay.com/en/squirrel-digging-earth-balcony-box-1228610/', description: 'squirrel'}),
-    knex('landmarks').insert({id: 1, image_link: 'rowValue', description: 'Image 2'}),
-    knex('landmarks').insert({id: 1, image_link: 'rowValue', description: 'Image 3'}),
+    knex('landmarks').insert({image_link: 'backend/public/images/columbine_64.jpg', description: 'Columbine flower'}),
+    knex('landmarks').insert({image_link: 'backend/public/images/gargoyle_64.jpg', description: 'Gargoyle Notre Dame'})
   );
 };

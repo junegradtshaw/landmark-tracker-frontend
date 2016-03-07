@@ -19,5 +19,5 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/cats/show.html',
         controller: 'CatsShowController'
       })
-    // $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 });

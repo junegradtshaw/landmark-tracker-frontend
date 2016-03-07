@@ -8,15 +8,15 @@ app.config(function($routeProvider, $locationProvider) {
         controller: 'MainController'
       })
       .when('/landmarks', {
-        templateUrl: 'partials/landmarks/index.html',
+        templateUrl: 'landmark-tracker/partials/landmarks/index.html',
         controller: 'LandmarksIndexController'
       })
       .when('/cats/new', {
-        templateUrl: 'partials/cats/new.html',
+        templateUrl: 'landmark-tracker/partials/cats/new.html',
         controller: 'CatsNewController'
       })
       .when('/cats/:id', {
-        templateUrl: 'partials/cats/show.html',
+        templateUrl: 'landmark-tracker/partials/cats/show.html',
         controller: 'CatsShowController'
       })
     $locationProvider.html5Mode(true);

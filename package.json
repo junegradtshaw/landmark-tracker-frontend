@@ -18,6 +18,7 @@
     "morgan": "~1.6.1",
     "pg": "^4.5.1",
     "q": "^1.4.1",
+    "send": "^0.13.2",
     "serve-favicon": "~2.3.0",
     "xmlhttprequest": "^1.8.0"
   }

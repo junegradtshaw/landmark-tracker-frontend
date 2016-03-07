@@ -1,8 +1,9 @@
-app.controller("MainController", function($scope, $http, CatService){
+app.controller("MainController", function($scope, $http){
    // no instance variables here....
 });
 
-app.controller("MainIndexController", function($scope, LandmarkService){
+app.controller("LandmarksIndexController", function($scope, LandmarkService){
+  console.log('in the landmark controller');
   LandmarkService.getLandmarks().then(function(payload){
     $scope.landmarks = payload.data;
     console.log($scope.landmarks);

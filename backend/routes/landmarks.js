@@ -7,11 +7,11 @@ var db = require("../javascripts/db.js")
 router.get("/", function(req,res){
    db.Landmarks().select().then(function(payload){
      console.log('payload from landmark db:', payload);
-     helper.readFiles(payload).then(function(fileContents) {
-       console.log('fileContents:', fileContents);
-       
+    //  helper.readFiles(payload).then(function(fileContents) {
+      //  console.log('fileContents:', fileContents);
       //  res.json(fileContents);
-    });
+      res.json(payload);
+    // });
   });
 });
 

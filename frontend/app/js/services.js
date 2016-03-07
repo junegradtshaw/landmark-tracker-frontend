@@ -2,8 +2,8 @@ app.service("LandmarkService", function($http){
   var LandmarkService = {};
 
   LandmarkService.getLandmarks = function(){
-    return $http.get("http://localhost:3000/landmarks", {method: "jsponp"});
-    // return $http.get("https://frozen-badlands-34577.herokuapp.com/cats", {method: "jsonp"});
+    // return $http.get("http://localhost:3000/landmarks", {method: "jsponp"});
+    return $http.get("https://landmark-app.herokuapp.com/landmarks", {method: "jsonp"});
   }
 
   // CatService.getCat = function(cat_id){

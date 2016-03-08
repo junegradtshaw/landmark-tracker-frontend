@@ -3,7 +3,8 @@ app.service("LandmarkService", function($http){
 
   LandmarkService.getLandmarks = function(){
     // return $http.get("http://localhost:3000/landmarks", {method: "jsponp"});
-    return $http.get("https://landmark-app.herokuapp.com/landmarks", {method: "jsonp"});
+    // return $http.get("https://landmark-app.herokuapp.com/landmarks", {method: "jsonp"});
+    return $http.get('https://landmark-app.herokuapp.com/landmarks');
   }
 
   // CatService.getCat = function(cat_id){

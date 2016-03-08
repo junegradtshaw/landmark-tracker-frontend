@@ -4,7 +4,7 @@ var app = angular.module("myApp", ['ngRoute', 'ngResource']);
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'landmark-tracker-frontend/partials/home.html',
+        templateUrl: '/landmark-tracker-frontend/partials/home.html',
         controller: 'MainController'
       })
       .when('/landmarks', {

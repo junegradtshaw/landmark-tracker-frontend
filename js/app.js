@@ -8,7 +8,8 @@ app.config(function($routeProvider, $locationProvider) {
         controller: 'MainController'
       })
       .when('/landmarks', {
-        templateUrl: 'landmark-tracker/partials/landmarks/index.html',
+        // templateUrl: 'landmark-tracker/partials/landmarks/index.html',
+        templateUrl: '/partials/landmarks/index.html',
         controller: 'LandmarksIndexController'
       })
       .when('/cats/new', {

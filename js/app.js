@@ -20,5 +20,5 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'landmark-tracker/partials/cats/show.html',
         controller: 'CatsShowController'
       })
-    // $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 });
